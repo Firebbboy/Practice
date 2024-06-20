@@ -1,6 +1,2 @@
--- 코드를 입력하세요
-SELECT book_id, to_char(published_date, 'yyyy-mm-dd')
-from book
-where to_char(published_date, 'yyyy-mm-dd') like '2021%'
-and category = '인문'
-order by published_date asc;
+-- 코드를 입력하세요 
+SELECT BOOK_ID, to_char(PUBLISHED_DATE,'YYYY-MM-DD') as "PUBLISHED_DATE" FROM BOOK WHERE TO_CHAR(PUBLISHED_DATE,'YYYY-MM-DD') LIKE '2021%' AND CATEGORY = '인문' ORDER BY PUBLISHED_DATE ASC;
